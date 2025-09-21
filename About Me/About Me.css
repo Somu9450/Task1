@@ -1,0 +1,114 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif; /* Changed default font */
+        }
+
+        body {
+            background: #f4f4f9; /* Slightly off-white background */
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .navigation {
+            flex: 0 0 180px;
+            background-color:#ffb200;
+            padding: 20px 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navigation ul {
+            list-style:none;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 100%;
+        }
+        
+        .navigation a { /* Styling for the links in nav */
+            text-decoration: none;
+            color: black;
+        }
+
+        .navigation li {
+            text-align: center;
+            padding: 8px;
+            background: #e6a204;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+
+        .navigation li:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .navigation li:active {
+            transform: scale(1.1);
+        }
+
+    /* Right Section */
+    .content{
+      display:flex;
+      flex-direction: column;
+      gap:30px;
+      min-height:80vh;
+      width:100%;
+      margin:30px;
+      margin-left:100px;
+    }
+    .heading{
+      flex: 1;
+      background-color:lightblue;
+      font-size: 100px;
+      font-family:roboto;
+      font-weight:900;
+      padding-left:15px;
+      padding-top:25px;
+      justify-content: center;
+      align-items: center;
+    }
+    .basic-info{
+      flex:1;
+      background-color:pink;
+      font-size:25px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      padding:15px;
+      padding-bottom:0;
+    }
+    .main-para{
+        margin-bottom:20px;
+    }
+
+    span{
+        font-size: 35px;
+        font-family:roboto;
+        font-weight:700;
+
+    }
+    .domain-facts-flex{
+      flex:2;
+      display:flex ;
+      flex-direction:row;
+      gap:50px;
+    }
+    .domain{
+      flex:1 ;
+      background-color:lightblue;
+      display:flex;
+      flex-direction: column;
+    }
+    .facts{
+      flex:1.5 ;
+      background-color:lightblue;
+    }
+    
+
+    
