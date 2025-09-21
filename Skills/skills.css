@@ -1,0 +1,90 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+  }
+
+      body {
+          background: #f4f4f9;
+          color: #333;
+      }
+
+                                 /* Main Container */
+
+      .container {
+          display: flex;
+          min-height: 100vh;
+      }
+                                 /* Navigation Pane */
+      .navigation {
+            flex: 0 0 200px;
+            background-color:#ffb200;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-icon img{
+            flex:0.5;
+            width:100%;
+            object-fit: fill;
+            margin-bottom:50px;
+            border-radius: 100%;
+            border:#333 solid 5px;
+        }
+
+      .navigation ul {
+          list-style:none;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          width: 100%;
+      }
+      
+      .navigation a { 
+          text-decoration: none;
+          color: black;
+      }
+
+      .navigation li {
+          text-align: center;
+          padding: 8px;
+          background: #e6a204;
+          border-radius: 15px;
+          cursor: pointer;
+          transition: transform 0.15s, box-shadow 0.15s;
+      }
+
+      .navigation li:hover {
+          transform: scale(1.1);
+          opacity: 0.9;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+
+      /* Page Content */
+
+      .content{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        padding: 60px;
+        gap:30px;
+      }
+      .languages{
+        flex:1;
+        background-color: lightblue;
+
+      }
+
+      .tools{
+        flex:1;
+        background-color: pink;
+
+      }
+
+      .soft-skills{
+        flex:1;
+        background-color: lightblue;
+
+      }

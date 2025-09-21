@@ -2,11 +2,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Roboto', sans-serif; /* Changed default font */
+            font-family: 'Roboto', sans-serif;
         }
 
         body {
-            background: #f4f4f9; /* Slightly off-white background */
+            background: #f4f4f9;
             color: #333;
         }
 
@@ -16,11 +16,20 @@
         }
 
         .navigation {
-            flex: 0 0 180px;
+            flex: 0 0 200px;
             background-color:#ffb200;
             padding: 20px 10px;
             display: flex;
+            flex-direction: column;
             align-items: center;
+        }
+        .profile-icon img{
+            flex:0.5;
+            width:100%;
+            object-fit: fill;
+            margin-bottom:50px;
+            border-radius: 100%;
+            border:#333 solid 5px;
         }
 
         .navigation ul {
@@ -31,7 +40,7 @@
             width: 100%;
         }
         
-        .navigation a { /* Styling for the links in nav */
+        .navigation a {
             text-decoration: none;
             color: black;
         }
@@ -59,56 +68,99 @@
       display:flex;
       flex-direction: column;
       gap:30px;
-      min-height:80vh;
-      width:100%;
-      margin:30px;
-      margin-left:100px;
+      flex: 1; 
+      padding: 40px;
     }
     .heading{
-      flex: 1;
-      background-color:lightblue;
-      font-size: 100px;
-      font-family:roboto;
+      background-color: #fff;
+      font-size: 4rem; 
+      font-family: 'Roboto Slab', serif;
       font-weight:900;
-      padding-left:15px;
-      padding-top:25px;
-      justify-content: center;
-      align-items: center;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-left: 5px solid #ffb200;
     }
     .basic-info{
-      flex:1;
-      background-color:pink;
-      font-size:25px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      padding:15px;
-      padding-bottom:0;
+      background-color: #fff;
+      font-size: 1.1rem;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      padding:30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-left: 5px solid #ffb200;
     }
     .main-para{
         margin-bottom:20px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #555;
     }
 
-    span{
-        font-size: 35px;
-        font-family:roboto;
+    .main-para span{
+        font-size: 2rem;
+        font-family:'Roboto Slab', serif;
         font-weight:700;
-
+        color: #000;
     }
-    .domain-facts-flex{
-      flex:2;
+
+    .hometown-promise-flex{
+      flex:1;
       display:flex ;
       flex-direction:row;
-      gap:50px;
+      gap:30px;
     }
-    .domain{
-      flex:1 ;
-      background-color:lightblue;
-      display:flex;
-      flex-direction: column;
-    }
-    .facts{
-      flex:1.5 ;
-      background-color:lightblue;
-    }
-    
 
+    .hometown, .promise {
+      flex:1;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      font-size: 1rem;
+      border-left: 5px solid #ffb200;
+    }
     
+    .hometown h3, .promise h3 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #333;
+    }
+    
+    .hometown p, .promise p {
+        line-height: 1.6;
+        color: #555;
+    }
+    
+    .hometown hr {
+        border: 0;
+        height: 1px;
+        background-color: #eee;
+        margin: 20px 0;
+    }
+    
+    .hometown ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .hometown li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        color: #555;
+    }
+    
+    .promise {
+      flex: 1.5; 
+    }
+
+    .promise p {
+        font-size: 1.1rem;
+    }
