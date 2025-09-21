@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Navigation */
+    .navigation {
+      flex: 0 0 180px;   /* fixed width */
+      background-color:#ffb200;
+      padding: 20px 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .navigation ul {
+      list-style:none;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      width: 100%;
+    }
+
+    .navigation li {
+      text-align: center;
+      padding: 8px;
+      background: #e6a204;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.15s;
+    }
+
+    .navigation li:hover {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+    .navigation li:active {
+        transform: scale(1.1);
+    }
+
+    /* Right Section */
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <!-- Navigation -->
+    <div class="navigation">
+      <nav>
+        <ul>
+          <a href=""><li class="icons"><i class="fa-solid fa-house">&nbsp; Home</i></li></a>
+          <a href=""><li class="icons"><i class="fa-solid fa-circle-info">&nbsp; About Me</i></li></a>
+          <a href=""><li class="icons"><i class="fa-solid fa-user-graduate">&nbsp; Education</i></li></a>
+          <a href=""><li class="icons"><i class="fa-solid fa-brain">&nbsp; Skills </i></li></a>
+          <a href=""><li class="icons"><i class="fa-solid fa-envelope">&nbsp; Contact Me</i></li></a>
+        </ul>
+      </nav>
+    </div>
+    <div>
+        <div style="background-color:lightblue">First horizontal grid</div>
+        <div style="background-color:pink">Second horizontal grid</div>
+        <div style="display:flex ; flex-direction:row">
+            <div style="flex:1 ; background-color:lightblue">First horizontal grid></div>
+            <div style="flex:1 ; background-color:pink">Second horizontal grid></div>
+        </div>
+    </div>
+    
+</body>
+</html>
