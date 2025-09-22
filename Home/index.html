@@ -1,4 +1,13 @@
-* {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Portfolio Page</title>
+  <!-- <link rel="stylesheet" href="/Home/style.css"> -->
+  <style>
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -154,22 +163,102 @@
 
   /* Responsive */
   @media (max-width: 900px) {
-    .container {
-      flex-direction: column;
-    }
-
-    .navigation {
-      flex: 0 0 auto;
-      width: 100%;
-    }
-
-    .navigation ul {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-
-    .right img {
-      width: 50%;
-      margin: 20px 0;
-    }
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
+  .navigation {
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 15px 10px;
+  }
+  .profile-icon {
+    display: none;
+  }
+  .navigation ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .info {
+    order: 3;
+    text-align: center;
+    margin-left: 0;
+    padding: 20px;
+  }
+  .right {
+    order: 2;
+    padding: 0;
+  }
+  .info h1 {
+    font-size: 38px;
+  }
+  .info h2 {
+    font-size: 30px;
+  }
+  .info p {
+    font-size: 18px;
+  }
+  button {
+    font-size: 18px;
+  }
+  .right img {
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+                       <!-- Navigation -->
+    <div class="navigation">
+        <div class="profile-icon">
+            <img src="/Images/photo.jpg" alt="Profile Pic">
+        </div>
+      <nav>
+        <ul>
+            <a href="/Home/index.html"><li class="icons"><i class="fa-solid fa-house"></i>&nbsp; Home</li></a>
+            <a href="/About Me/About me.html"><li class="icons"><i class="fa-solid fa-circle-info"></i>&nbsp; About Me</li></a>
+            <a href="/Education/Education.html"><li class="icons"><i class="fa-solid fa-user-graduate"></i>&nbsp; Education</li></a>
+            <a href="/Skills/skills.html"><li class="icons"><i class="fa-solid fa-brain"></i>&nbsp; Skills </li></a>
+            <a href="/Contact Me/contactme.html"><li class="icons"><i class="fa-solid fa-envelope"></i>&nbsp; Contact Me</li></a>
+        </ul>
+      </nav>
+    </div>
+    
+
+                       <!-- Info Section -->
+    <div class="info">
+      <div class="box">
+        <h2>HI THERE!</h2>
+      </div>
+      <div class="box">
+        <h1>I'M <span>SOMU</span></h1>
+      </div>
+      <div class="box">
+        <p class="domain">WEB DEVELOPER / JAVA DEVELOPER</p>
+        <p class="sub-domain">READY TO HANDLE YOUR NEW PROJECT</p>
+      </div>
+      <div class="box">
+        <p>
+          Exploring the intersection of machine learning and web development
+          to create applications that think, adapt, and inspire.
+        </p>
+      </div>
+      <div class="box">
+        <a href="/About Me/About me.html"><button>MORE ABOUT ME</button></a>
+      </div>
+    </div>
+
+                <!-- Right Image Section -->
+    <div class="right">
+      <img src="/Images/photo.jpg" alt="Profile Image">
+    </div>
+
+  </div>
+</body>
+</html>

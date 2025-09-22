@@ -9,6 +9,150 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/Skills/skills.css">
   <title>My Skills</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        background: #f4f4f9;
+        color: #333;
+    }
+
+    .container {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    /* Navigation Pane */
+    .navigation {
+        flex: 0 0 200px;
+        background-color: #91f0c2;
+        padding: 25px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    
+    .profile-icon {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+
+    .profile-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .navigation ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+    }
+    
+    .navigation a { 
+        text-decoration: none;
+        color: black;
+    }
+
+    .navigation li {
+        text-align: center;
+        padding: 10px;
+        background: #91f0c2;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    }
+
+    .navigation li:hover {
+        transform: scale(1.1);
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Page Content */
+    .content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 40px;
+      gap: 30px;
+      overflow-y: auto;
+    }
+    
+    /* Card Content Flex */
+
+    .skill-card {
+        background-color:#f4f4f9;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        border-left: 5px solid #91f0c2;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .skill-card h3 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 25px;
+        color: #333;
+    }
+    
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    
+    .skill-image {
+        width: 130px;
+        height: 130px;
+        object-fit: contain; /* Use 'contain' to prevent distortion */
+        border: 4px solid #f0f0f0;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: #fff;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .skill-image:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+     /* Responsive */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .navigation {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+
+    .navigation ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+}
+  </style>
 </head>
 <body>
   <div class="container">
@@ -19,7 +163,7 @@
         </div>
       <nav>
         <ul>
-            <a href="/Home/home.html"><li class="icons"><i class="fa-solid fa-house"></i>&nbsp; Home</li></a>
+            <a href="/Home/index.html"><li class="icons"><i class="fa-solid fa-house"></i>&nbsp; Home</li></a>
             <a href="/About Me/About me.html"><li class="icons"><i class="fa-solid fa-circle-info"></i>&nbsp; About Me</li></a>
             <a href="/Education/Education.html"><li class="icons"><i class="fa-solid fa-user-graduate"></i>&nbsp; Education</li></a>
             <a href="/Skills/skills.html"><li class="icons"><i class="fa-solid fa-brain"></i>&nbsp; Skills </li></a>

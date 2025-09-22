@@ -5,7 +5,170 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>Portfolio Page</title>
-  <link rel="stylesheet" href="/Contact Me/contactme.css">
+  <!-- <link rel="stylesheet" href="/Contact Me/contactme.css"> -->
+  <script src="contactme.js" defer></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: #f4f4f9;
+      color: #333;
+    }
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+    .navigation {
+      flex: 0 0 200px;
+      background-color: #91f0c2;
+      padding: 25px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    .profile-icon {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 30px;
+    }
+    .profile-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .navigation ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      width: 100%;
+    }
+    .navigation a { 
+      text-decoration: none;
+      color: black;
+    }
+    .navigation li {
+      text-align: center;
+      padding: 10px;
+      background: #91f0c2;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    }
+    .navigation li:hover {
+      transform: scale(1.1);
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 40px;
+      gap: 30px;
+    }
+    .form {
+      flex: 1;
+      align-self: center;
+      background-color:#f4f4f9;
+      padding: 30px;
+      width:50%;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #a7a7ab;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .form button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #91f0c2;
+      color: #323232;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .form button:hover {
+      background-color: #91f0c2;
+    }
+    .social {
+      flex: 1;
+      display: flex;
+      align-self: center;
+      width:50%;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .social a {
+      color: #333;
+      font-size: 40px;
+      transition: transform 0.2s, color 0.2s;
+    }
+    .social a:hover {
+      transform: scale(1.2);
+      color: #91f0c2;
+    }
+
+     /* Responsive */
+  @media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .navigation {
+    width: 100%;
+    flex: none;
+  }
+
+  .navigation ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .form, .social {
+    width: 90%;
+  }
+}
+
+</style>
 </head>
 <body>
 
@@ -19,7 +182,7 @@
       </div>
       <nav>
         <ul>
-          <a href="/Home/home.html"><li class="icons"><i class="fa-solid fa-house"></i>&nbsp; Home</li></a>
+          <a href="/Home/index.html"><li class="icons"><i class="fa-solid fa-house"></i>&nbsp; Home</li></a>
           <a href="/About Me/About me.html"><li class="icons"><i class="fa-solid fa-circle-info"></i>&nbsp; About Me</li></a>
           <a href="/Education/Education.html"><li class="icons"><i class="fa-solid fa-user-graduate"></i>&nbsp; Education</li></a>
           <a href="/Skills/skills.html"><li class="icons"><i class="fa-solid fa-brain"></i>&nbsp; Skills </li></a>
@@ -33,7 +196,7 @@
     <div class="content">
       <div class="form">
         <h2>Get in Touch</h2>
-        <form action="submit">
+        <form id="contactForm">
           <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
