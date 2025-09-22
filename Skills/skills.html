@@ -3,33 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <title>Portfolio Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/Skills/skills.css">
+  <title>My Skills</title>
 </head>
 <body>
   <div class="container">
-
-                       <!-- Navigation -->
+    <!-- Navigation -->
     <div class="navigation">
         <div class="profile-icon">
             <img src="/Images/photo.jpg" alt="Profile Pic">
         </div>
       <nav>
         <ul>
-          <a href="/Home/home.html"><li class="icons"><i class="fa-solid fa-house">&nbsp; Home</i></li></a>
-          <a href="/About Me/About me.html"><li class="icons"><i class="fa-solid fa-circle-info">&nbsp; About Me</i></li></a>
-          <a href="/Education/Education.html"><li class="icons"><i class="fa-solid fa-user-graduate">&nbsp; Education</i></li></a>
-          <a href="/Skills/skills.html"><li class="icons"><i class="fa-solid fa-brain">&nbsp; Skills </i></li></a>
-          <a href="/Contact Me/contactme.html"><li class="icons"><i class="fa-solid fa-envelope">&nbsp; Contact Me</i></li></a>
+            <a href="/Home/home.html"><li class="icons"><i class="fa-solid fa-house"></i>&nbsp; Home</li></a>
+            <a href="/About Me/About me.html"><li class="icons"><i class="fa-solid fa-circle-info"></i>&nbsp; About Me</li></a>
+            <a href="/Education/Education.html"><li class="icons"><i class="fa-solid fa-user-graduate"></i>&nbsp; Education</li></a>
+            <a href="/Skills/skills.html"><li class="icons"><i class="fa-solid fa-brain"></i>&nbsp; Skills </li></a>
+            <a href="/Contact Me/contactme.html"><li class="icons"><i class="fa-solid fa-envelope"></i>&nbsp; Contact Me</li></a>
         </ul>
       </nav>
     </div>
+
+    <!-- Main Content with 3 Skill Rows -->
     <div class="content">
-        <div class="languages">LANGUAGES</div>
-        <div class="tools">TOOLS</div>
-        <div class="soft-skills">SOFT SKILLS</div>
+
+        <!-- Languages -->
+        <div class="skill-card">
+            <h3>Languages</h3>
+            <div class="image-container">
+                <img class="skill-image" src="/Images/c.webp" alt="Language 1">
+                <img class="skill-image" src="/Images/java.png" alt="Language 2">
+                <img class="skill-image" src="/Images/python.jpg" alt="Language 3">
+                <img class="skill-image" src="/Images/webd.png" alt="Language 4">
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card">
+            <h3>Tools</h3>
+            <div class="image-container">
+                <img class="skill-image" src="/Images/git.png" alt="Tool 1">
+                <img class="skill-image" src="/Images/ij.png" alt="Tool 2">
+                <img class="skill-image" src="/Images/vscode.png" alt="Tool 3">
+            </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-card">
+            <h3>Soft Skills</h3>
+            <div class="image-container">
+                <img class="skill-image" src="/Images/problemsolving.webp" alt="Soft Skill 1">
+                <img class="skill-image" src="/Images/teamwork.jpg" alt="Soft Skill 2">
+            </div>
+        </div>
+
     </div>
-    </div>
+  </div>
 </body>
 </html>
+

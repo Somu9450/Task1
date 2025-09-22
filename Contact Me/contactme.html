@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Portfolio Page</title>
+  <link rel="stylesheet" href="/Contact Me/contactme.css">
 </head>
 <body>
-    
+  <div class="container">
+    <div class="navigation">
+      <div class="profile-icon">
+        <img src="/Images/photo.jpg" alt="Profile Pic">
+      </div>
+      <nav>
+        <ul>
+          <a href="/Home/home.html"><li class="icons"><i class="fa-solid fa-house"></i>&nbsp; Home</li></a>
+          <a href="/About Me/About me.html"><li class="icons"><i class="fa-solid fa-circle-info"></i>&nbsp; About Me</li></a>
+          <a href="/Education/Education.html"><li class="icons"><i class="fa-solid fa-user-graduate"></i>&nbsp; Education</li></a>
+          <a href="/Skills/skills.html"><li class="icons"><i class="fa-solid fa-brain"></i>&nbsp; Skills </li></a>
+          <a href="/Contact Me/contactme.html"><li class="icons"><i class="fa-solid fa-envelope"></i>&nbsp; Contact Me</li></a>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Right section content -->
+
+    <div class="content">
+      <div class="form">
+        <h2>Get in Touch</h2>
+        <form action="submit">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Social links -->
+
+      <div class="social">
+        <a href="https://www.linkedin.com/in/somu-sharma-634b46354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Somu9450"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:somusharmass.9450@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.instagram.com/04s_sharma?igsh=MWM2N2tlMjUwamltNg=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://leetcode.com/u/somu9450/"><i class="fa-solid fa-code"></i></a>
+        <a href="tel:+918299085590"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
