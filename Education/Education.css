@@ -18,7 +18,7 @@
     /* Navigation Pane */
     .navigation {
         flex: 0 0 200px;
-        background-color: #ffb200;
+        background-color: #91f0c2;
         padding: 25px 10px;
         display: flex;
         flex-direction: column;
@@ -57,7 +57,7 @@
     .navigation li {
         text-align: center;
         padding: 10px;
-        background: #e6a204;
+        background: #91f0c2;
         border-radius: 15px;
         cursor: pointer;
         transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
@@ -133,7 +133,7 @@
             font-family: 'Roboto Slab', serif;
             margin-bottom: 8px;
             font-size: 1.4rem;
-            color: #e6a204; /* Dark blue for headings */
+            color: #91f0c2; /* Dark blue for headings */
         }
         
         .card-info p {
@@ -149,7 +149,7 @@
         /* Specific section styles */
         .College {
             flex: 0 0 40%; /* Adjusted flex-basis for content */
-            border-left: 5px solid #e6a204; /* Blue accent */
+            border-left: 5px solid #91f0c2; /* Blue accent */
         }
 
         .schooling {
@@ -164,10 +164,27 @@
         }
         
         .intermediate {
-            border-left: 5px solid #e6a204; /* Orange accent */
+            border-left: 5px solid #91f0c2; /* Orange accent */
         }
         
         .Highschool {
-            border-left: 5px solid #e6a204; /* Green accent */
+            border-left: 5px solid #91f0c2; /* Green accent */
         }
+
+         /* Responsive */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .navigation {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+
+    .navigation ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+}
         

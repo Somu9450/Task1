@@ -18,7 +18,7 @@
     /* Navigation Pane */
     .navigation {
         flex: 0 0 200px;
-        background-color: #ffb200;
+        background-color: #91f0c2;
         padding: 25px 10px;
         display: flex;
         flex-direction: column;
@@ -57,7 +57,7 @@
     .navigation li {
         text-align: center;
         padding: 10px;
-        background: #e6a204;
+        background: #91f0c2;
         border-radius: 15px;
         cursor: pointer;
         transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
@@ -85,7 +85,7 @@
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      border-left: 5px solid #ffb200;
+      border-left: 5px solid #91f0c2;
     }
     .basic-info{
       background-color: #fff;
@@ -95,7 +95,7 @@
       padding:30px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      border-left: 5px solid #ffb200;
+      border-left: 5px solid #91f0c2;
     }
     .main-para{
         margin-bottom:20px;
@@ -120,7 +120,7 @@
 
     .hometown i{
         transform: scale(1.2);
-      color: #ffb200;
+      color: #91f0c2;
     }
 
     .hometown, .promise {
@@ -130,7 +130,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       font-size: 1rem;
-      border-left: 5px solid #ffb200;
+      border-left: 5px solid #91f0c2;
     }
     
     .hometown h3, .promise h3 {
@@ -175,3 +175,88 @@
     .promise p {
         font-size: 1.1rem;
     }
+
+     /* Responsive */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .navigation {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+
+    .navigation ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .content{
+        padding:20px;
+
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .basic-info{
+        font-size: 0.9rem;
+    }
+    .main-para{
+        font-size:0.9rem;
+    }
+    span{
+        font-size:1rem;
+    }
+    .hometown, .promise p{
+        font-size: 0.8rem;
+    }
+     .hometown h3, .promise h3 {
+        font-size: 1.1rem;
+
+     }
+}
+
+@media(max-width:600px){
+    .container {
+      flex-direction: column;
+    }
+
+    .navigation {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+
+    .navigation ul {
+      flex-direction: row;
+      justify-content:space-between;
+    }
+
+    .content{
+        padding:15px;
+
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    .basic-info{
+        font-size: 0.7rem;
+    }
+    .main-para{
+        font-size:0.7rem;
+    }
+    span{
+        font-size:0.8rem;
+    }
+    .hometown, .promise p{
+        font-size: 0.5rem;
+    }
+     .hometown h3, .promise h3 {
+        font-size: 0.8rem;
+
+     }
+    .hometown-promise-flex{
+        flex-direction: column;
+    }
+
+}
