@@ -190,6 +190,7 @@
     .navigation ul {
       flex-direction: row;
       justify-content: space-around;
+      flex-wrap: wrap;
     }
 
     .content{
@@ -215,48 +216,4 @@
         font-size: 1.1rem;
 
      }
-}
-
-@media(max-width:600px){
-    .container {
-      flex-direction: column;
-    }
-
-    .navigation {
-      flex: 0 0 auto;
-      width: 100%;
-    }
-
-    .navigation ul {
-      flex-direction: row;
-      justify-content:space-between;
-    }
-
-    .content{
-        padding:15px;
-
-    }
-    .heading{
-        font-size: 1.5rem;
-    }
-    .basic-info{
-        font-size: 0.7rem;
-    }
-    .main-para{
-        font-size:0.7rem;
-    }
-    span{
-        font-size:0.8rem;
-    }
-    .hometown, .promise p{
-        font-size: 0.5rem;
-    }
-     .hometown h3, .promise h3 {
-        font-size: 0.8rem;
-
-     }
-    .hometown-promise-flex{
-        flex-direction: column;
-    }
-
 }
