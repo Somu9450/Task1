@@ -6,7 +6,7 @@
     }
 
     body {
-        background: #f4f4f9;
+        background: #f5EFE6;
         color: #333;
     }
 
@@ -18,18 +18,20 @@
     /* Navigation Pane */
     .navigation {
         flex: 0 0 200px;
-        background-color: #91f0c2;
+        background-color:#f8dbb0;
         padding: 25px 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     }
     
     .profile-icon {
         width: 120px;
         height: 120px;
-        margin-bottom: 30px;
+        margin-top: 25%;
+        margin-bottom: 90px;
     }
 
     .profile-icon img {
@@ -39,13 +41,21 @@
         border-radius: 50%;
         border: 5px solid #fff;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: transform 0.15s;
+    }
+
+    .profile-icon img:hover{
+        transform: scale(1.1);
+        background-color: #fff;
+        box-shadow: 0 0 5px 2px rgba(145,240,194,0.8);
+
     }
 
     .navigation ul {
         list-style: none;
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 30px;
         width: 100%;
     }
     
@@ -57,7 +67,7 @@
     .navigation li {
         text-align: center;
         padding: 10px;
-        background: #91f0c2;
+        background:#f5EFE6;
         border-radius: 15px;
         cursor: pointer;
         transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
@@ -66,7 +76,7 @@
     .navigation li:hover {
         transform: scale(1.1);
         background-color: #fff;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        box-shadow: 0 0 5px 2px rgba(145,240,194,0.8);
     }
 
                                             /* Left Info Section */
@@ -125,10 +135,11 @@
     cursor: pointer;
     border-radius: 5px;
     font-size: 26px;
+    transition: transform 0.20s;
   }
   button:hover {
       transform: scale(1.1);
-      opacity: 0.9;
+      opacity: 0.8;
   }
 
                                            /* Right Image Section */
@@ -137,7 +148,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f4f4f9;
+    background:#f5EFE6;
     padding: 20px;
   }
 
