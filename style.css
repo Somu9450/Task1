@@ -1,12 +1,11 @@
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        html {
-            scroll-behavior:smooth;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    .scrollable-content {
+            scroll-behavior :smooth;
         }
 
         body {
@@ -18,7 +17,7 @@
 
         .container {
             display: flex;
-            height: 100%; /* Make container fill the body's height */
+            height: 100%;
         }
 
         /* Navigation Pane */
@@ -455,8 +454,8 @@
         }
 
         .form button {
-            background-color: #91f0c2;
-            color: #323232;
+            background-color: #373636;
+            color: #fdfcfc;
             font-weight: bold;
         }
 
@@ -564,5 +563,10 @@
 
             .form, .social {
                 width: 90%;
+            }
+        }
+        @media (max-width: 500px){
+            .social{
+                flex-wrap: wrap;
             }
         }
