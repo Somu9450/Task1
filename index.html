@@ -1,60 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <title>Portfolio Page</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Somu Sharma - Portfolio</title>
+    <link rel="stylesheet" href="/test.css">
+    <script src="/test.js" defer></script>
 </head>
 <body>
-  <div class="container">
-
-                       <!-- Navigation -->
-    <div class="navigation">
-        <div class="profile-icon">
-            <img src="/Images/photo.jpg" alt="Profile Pic">
+    <div class="container">
+        <!-- Navigation -->
+        <div class="navigation">
+            <div class="profile-icon">
+                <img src="Images/photo.jpg" alt="Profile Pic">
+            </div>
+            <nav>
+                <ul>
+                    <a href="#home"><li class="icons"><i class="fa-solid fa-house"></i>&nbsp; Home</li></a>
+                    <a href="#about"><li class="icons"><i class="fa-solid fa-circle-info"></i>&nbsp; About Me</li></a>
+                    <a href="#education"><li class="icons"><i class="fa-solid fa-user-graduate"></i>&nbsp; Education</li></a>
+                    <a href="#skills"><li class="icons"><i class="fa-solid fa-brain"></i>&nbsp; Skills </li></a>
+                    <a href="#contact"><li class="icons"><i class="fa-solid fa-envelope"></i>&nbsp; Contact Me</li></a>
+                </ul>
+            </nav>
         </div>
-      <nav>
-        <ul>
-            <a href="./index.html"><li class="icons"><i class="fa-solid fa-house"></i>&nbsp; Home</li></a>
-            <a href="/About Me/About me.html"><li class="icons"><i class="fa-solid fa-circle-info"></i>&nbsp; About Me</li></a>
-            <a href="/Education/Education.html"><li class="icons"><i class="fa-solid fa-user-graduate"></i>&nbsp; Education</li></a>
-            <a href="/Skills/skills.html"><li class="icons"><i class="fa-solid fa-brain"></i>&nbsp; Skills </li></a>
-            <a href="/Contact Me/contactme.html"><li class="icons"><i class="fa-solid fa-envelope"></i>&nbsp; Contact Me</li></a>
-        </ul>
-      </nav>
-    </div>
-    
+        
+        <div class="scrollable-content">
+            <!-- Home Section -->
+            <section id="home">
+                <div class="info">
+                    <div class="box"> <h2>HI THERE!</h2> </div>
+                    <div class="box"> <h1>I'M <span>SOMU SHARMA</span></h1> </div>
+                    <div class="box">
+                        <p class="domain">WEB DEVELOPER / JAVA DEVELOPER</p>
+                        <p class="sub-domain">READY TO HANDLE YOUR NEW PROJECT</p>
+                    </div>
+                    <div class="box"> <p> Exploring the intersection of machine learning and web development to create applications that think, adapt, and inspire. </p> </div>
+                    <div class="box"> <a href="#about"><button>MORE ABOUT ME</button></a> </div>
+                </div>
+                <div class="right">
+                    <img src="/Images/photo.jpg" alt="Profile Image">
+                </div>
+            </section>
 
-                       <!-- Info Section -->
-    <div class="info">
-      <div class="box">
-        <h2>HI THERE!</h2>
-      </div>
-      <div class="box">
-        <h1>I'M <span>SOMU SHARMA</span></h1>
-      </div>
-      <div class="box">
-        <p class="domain">WEB DEVELOPER / JAVA DEVELOPER</p>
-        <p class="sub-domain">READY TO HANDLE YOUR NEW PROJECT</p>
-      </div>
-      <div class="box">
-        <p>
-          Exploring the intersection of machine learning and web development
-          to create applications that think, adapt, and inspire.
-        </p>
-      </div>
-      <div class="box">
-        <a href="/About Me/About me.html"><button>MORE ABOUT ME</button></a>
-      </div>
-    </div>
+            <!-- About Section -->
+            <section id="about">
+                <div class="content">
+                    <div class="heading">ABOUT ME</div>
+                    <div class="basic-info">
+                        <p class="main-para">I'M <span>SOMU SHARMA,</span> a Web and Java Developer.</p>
+                        <p>Exploring the intersection of machine learning and web development to create applications that think, adapt, and inspire. My knowledge of Web development , C , Java and Python helps me to combine all these technologies to create a fully functional and versatile project. It also helps me to easily understand any new project and work with new teams.</p>
+                    </div>
+                    <div class="hometown-promise-flex">
+                        <div class="hometown">
+                            <h3><i class="fa-solid fa-location-dot"></i> Hometown</h3>
+                            <p>Lucknow, Uttar Pradesh</p>
+                            <hr>
+                            <h3><i class="fa-solid fa-heart"></i> Hobbies</h3>
+                            <ul>
+                                <li><i class="fa-solid fa-book-open"></i> General Reading</li>
+                                <li><i class="fa-solid fa-laptop-code"></i> Computer Tinkering</li>
+                                <li><i class="fa-solid fa-screwdriver-wrench"></i> Repairing Gadgets</li>
+                            </ul>
+                        </div>
+                        <div class="promise">
+                            <h3><i class="fa-solid fa-rocket"></i> My Approach</h3>
+                            <p>I turn complex challenges into simple, beautiful, and intuitive digital experiences. Passionate about crafting pixel-perfect code and building applications that are a joy to use, I'm always eager to learn and collaborate. Let's connect!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                <!-- Right Image Section -->
-    <div class="right">
-      <img src="/Images/photo.jpg" alt="Profile Image">
-    </div>
+            <!-- Education Section -->
+            <section id="education">
+                <div class="content">
+                    <a href="https://drive.google.com/file/d/1JrYXvNNAeMhUQs4FRkt36dYHgGDqiTfY/view?usp=sharing" class="card-link">
+                        <div class="College">
+                            <div class="card-info">
+                                <h3>Ajay Kumar Garg Engineering College</h3>
+                                <p>B.Tech - CSIT (2024-2028)</p>
+                                <p><strong>Current SGPA:</strong> 8.55</p>
+                            </div>
+                            <img src="https://assets.collegedunia.com/public/college_data/images/logos/1499925698AjayKumarGargEngineeringCollege.png" alt="AKGEC Logo" class="logo">
+                        </div>
+                    </a>
+                    <div class="schooling">
+                        <a href="https://drive.google.com/file/d/1JmcXNhH12L-ySIbOs6xcBSAqgqv7dXNb/view?usp=sharing" class="card-link" style="flex: 1;">
+                            <div class="intermediate">
+                                <div class="card-info">
+                                    <h3>Intermediate (XII)</h3>
+                                    <p>Rani Laxmi Bai Memorial School</p>
+                                    <p><strong>Percentage:</strong> 91%</p>
+                                </div>
+                                <img src="https://tse1.mm.bing.net/th/id/OIP.speNN23n6AtSJK_RCzqbxwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="RLB School Logo" class="logo">
+                            </div>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1FYOAxr2pPUndSBwyG2_GdAzxuDGlnq9g/view?usp=sharing" class="card-link" style="flex: 1;">
+                            <div class="Highschool">
+                                <div class="card-info">
+                                    <h3>High School (X)</h3>
+                                    <p>Rani Laxmi Bai Memorial School</p>
+                                    <p><strong>Percentage:</strong> 95%</p>
+                                </div>
+                                <img src="https://tse1.mm.bing.net/th/id/OIP.speNN23n6AtSJK_RCzqbxwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="RLB School Logo" class="logo">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-  </div>
+            <!-- Skills Section -->
+            <section id="skills">
+                <div class="content">
+                    <div class="skill-card">
+                        <h3>Languages</h3>
+                        <div class="image-container">
+                            <img class="skill-image" src="/Images/c.webp" alt="C Language">
+                            <img class="skill-image" src="/Images/java.png" alt="Java">
+                            <img class="skill-image" src="/Images/python.jpg" alt="Python">
+                            <img class="skill-image" src="/Images/webd.png" alt="HTML/CSS/JS">
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tools</h3>
+                        <div class="image-container">
+                            <img class="skill-image" src="/Images/git.png" alt="Git">
+                            <img class="skill-image" src="/Images/ij.png" alt="IntelliJ IDEA">
+                            <img class="skill-image" src="/Images/vscode.png" alt="VS Code">
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Soft Skills</h3>
+                        <div class="image-container">
+                            <img class="skill-image" src="/Images/problemsolving.webp" alt="Problem Solving">
+                            <img class="skill-image" src="/Images/teamwork.jpg" alt="Teamwork">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact Section -->
+            <section id="contact">
+                <div class="content">
+                    <div class="form">
+                        <h2>Get in Touch</h2>
+                        <form id="contactForm">
+                            <div class="form-group"> <label for="name">Name:</label> <input type="text" id="name" name="name" required> </div>
+                            <div class="form-group"> <label for="email">Email:</label> <input type="email" id="email" name="email" required> </div>
+                            <div class="form-group"> <label for="subject">Subject:</label> <input type="text" id="subject" name="subject" required> </div>
+                            <div class="form-group"> <label for="message">Message:</label> <textarea id="message" name="message" rows="4" required></textarea> </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/somu-sharma-634b46354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Somu9450"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:somusharmass.9450@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/04s_sharma?igsh=MWM2N2tlMjUwamltNg=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://leetcode.com/u/somu9450/"><i class="fa-solid fa-code"></i></a>
+                        <a href="tel:+918299085590"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
+
